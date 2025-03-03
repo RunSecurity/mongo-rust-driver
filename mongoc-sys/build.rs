@@ -87,4 +87,5 @@ fn main() {
     println!("cargo:rustc-link-lib=static=bson-static-1.0");
     println!("cargo:rustc-link-lib=static=mongoc-static-1.0");
     println!("cargo:rustc-link-lib=resolv");
+    println!("cargo:rustc-link-lib=zstd");
 }

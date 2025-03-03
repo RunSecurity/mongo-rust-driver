@@ -45,7 +45,6 @@ pub struct Database<'a> {
 }
 
 impl<'a> Database<'a> {
-    #[doc(ignore)]
     pub fn new(created_by: CreatedBy<'a>, inner: *mut bindings::mongoc_database_t) -> Database<'a> {
         assert!(!inner.is_null());
         Database {
